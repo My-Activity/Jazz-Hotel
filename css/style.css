@@ -15,10 +15,6 @@ body {
   font-size: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* Navbar */
 #navbar {
   background-color: #fff;
@@ -93,7 +89,6 @@ a {
   text-align: center;
   position: relative;
 }
-
 /* Features */
 .features {
   display: flex;
@@ -149,8 +144,7 @@ h3 {
   margin-bottom: 2rem;
 }
 
-/* Position
-1)middle*/
+/* Position*/
 .content-middle {
   position: absolute;
   top: 50%;
@@ -160,6 +154,10 @@ h3 {
 }
 
 /* Buttons */
+a {
+  text-decoration: none;
+}
+
 .btn--dark {
   color: #fff;
   background-color: #212529;
@@ -196,11 +194,105 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-/* Background */
+/* Background color*/
 .bg--yellow {
   background-color: #f8ca67;
 }
 
 .bg--dark {
   background-color: #212529;
+}
+
+/* Brakepointe */
+@media only screen and (max-width: 992px) {
+  .header {
+    height: 85vh;
+  }
+
+  .primary-heading--white {
+    font-size: 4.5rem;
+  }
+
+  .paragraph--title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .secondary-heading--white {
+    font-size: 2.5rem;
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+  }
+  .paragraph--info {
+    font-size: 1.4rem;
+  }
+
+  .home-img {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 65vh;
+  }
+
+  .primary-heading--white {
+    font-size: 3.5rem;
+  }
+
+  .btn {
+    font-size: 1.3rem;
+  }
+
+  .secondary-heading--white {
+    font-size: 2rem;
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 0.8rem;
+  }
+
+  .home {
+    display: block;
+  }
+
+  .home-img {
+    width: 100%;
+    height: 35vh;
+    background-position: center 25%;
+  }
+
+  .home-content {
+    width: 100%;
+    height: 35vh;
+    padding: 35px 0;
+  }
+
+  .content-middle {
+    width: 70%;
+  }
+
+  .features {
+    display: block;
+  }
+
+  .box {
+    width: 100%;
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #navbar {
+    justify-content: center;
+    align-items: center;
+  }
 }
